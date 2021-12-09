@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfl::after {
+  content: ""; /*设置内容为空*/
+  height: 0; /*高度为0*/
+  line-height: 0; /*行高为0*/
+  display: block; /*将文本转为块级元素*/
+  visibility: hidden; /*将元素隐藏*/
+  clear: both; /*清除浮动*/
+}
+
+//头部
+.top {
+  background-color: rgba(255, 255, 255, 0.1); //rgb颜色利于设置透明度
+  .navbar-nav {
+    height: 84px;
+    & > li {
+      //子孙选择器（当下的子孙）
+      & > a {
+        line-height: 54px; //84-top:15-bottom:15=54px
+        color: black;
+      }
+    }
+  }
+
+  .navbar-header {
+    .sui {
+      padding-top: 15px;
+      width: 300px;
+      color: #025896;
+      line-height: 15px;
+      text-align: center;
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: #ddd; //伸缩盒子边框
+    .icon-bar {
+      background-color: #888;
+    }
+  }
+}
+
+.navbar-collapse.in {
+  overflow-y: unset; //取消内置滚动条
+}
+
+.carousel-inner .item img{
+  width: 100%;
+}
+
+.glyphicon-chevron-left::before{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+ 
+}
+
+.glyphicon-chevron-right::before{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  
+}
+
+//尾部
+ .op{
+  width: 100%;
+  height: 177px;
+  background-color: #313131;
+  .br{
+      margin: 0 auto;
+      width: 902px;
+      height: 115px;
+      color:#fff;
+   
+    .i{
+      width: 178px;
+      margin-top: 30px;
+      text-align: center;
+      }
+      .pp{
+        width: 190px;
+        line-height: 30px;
+        margin-top: 30px;
+        text-align: center;
+        .de{
+          width: 170px; 
+          img{
+            float: left;
+            margin-right: 18px;
+          }
+         
+       }
+      .tt{
+        .or{
+          float: left;
+        }
+        .ir{
+          margin-left: 30px;
+          float: left;
+        }
+        .jr{
+          float: right;
+        }
+      }
+    }
+    .m{
+      width: 93px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.cv{
+  width: 100%;
+  height: 43px;
+  background-color: #242323;
+  text-align: center;
+  line-height: 43px;
+  color: #b0b0b0;
+}
